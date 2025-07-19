@@ -29,9 +29,6 @@ dynamic = ["version"]
 [tool.setuptools.packages.find]
 include = ["madox*"]
 
-[tool.setuptools.dynamic]
-version = {attr = "madox._version.__version__"}
-
 [tool.setuptools_scm]
-write_to = "madox/_version.py"
+version_file = "madox/_version.py"
 version_scheme = "no-guess-dev"
